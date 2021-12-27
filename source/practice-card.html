@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Ищите знания в приложении Sokrat.">
+  <title>Sokrat — Тысячи знаний внутри</title>
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="shortcut icon" href="/img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#62BACD">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Favicon End -->
+
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/GothamPro.woff2" as="font">
+  <link rel="preload" href="fonts/GothamPro-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/GothamPro-Light.woff2" as="font">
+
+</head>
+
+<body>
+  <div style="display:none">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <symbol id="icon-instagram" viewBox="0 0 31 31">
+        <path
+          d="M30.907,9.109a11.38,11.38,0,0,0-.721-3.762A7.6,7.6,0,0,0,28.4,2.6,7.6,7.6,0,0,0,25.653.813a11.377,11.377,0,0,0-3.762-.72C20.238.018,19.709,0,15.5,0S10.762.018,9.109.093A11.381,11.381,0,0,0,5.347.814,7.6,7.6,0,0,0,2.6,2.6,7.6,7.6,0,0,0,.813,5.347a11.379,11.379,0,0,0-.72,3.762C.018,10.762,0,11.29,0,15.5s.018,4.738.094,6.391a11.377,11.377,0,0,0,.72,3.762A7.6,7.6,0,0,0,2.6,28.4a7.6,7.6,0,0,0,2.745,1.788,11.373,11.373,0,0,0,3.762.721c1.653.075,2.181.093,6.391.093s4.738-.018,6.391-.093a11.375,11.375,0,0,0,3.762-.721,7.924,7.924,0,0,0,4.533-4.533,11.376,11.376,0,0,0,.721-3.762c.075-1.653.093-2.181.093-6.391s-.018-4.738-.093-6.391Zm-2.79,12.654a8.576,8.576,0,0,1-.534,2.878,5.133,5.133,0,0,1-2.942,2.942,8.576,8.576,0,0,1-2.878.534c-1.634.075-2.124.09-6.263.09s-4.629-.016-6.264-.09a8.579,8.579,0,0,1-2.878-.534,4.8,4.8,0,0,1-1.782-1.16,4.8,4.8,0,0,1-1.16-1.782,8.576,8.576,0,0,1-.534-2.878c-.075-1.634-.09-2.125-.09-6.263s.016-4.629.09-6.264a8.582,8.582,0,0,1,.534-2.878,4.805,4.805,0,0,1,1.16-1.782A4.8,4.8,0,0,1,6.358,3.417a8.574,8.574,0,0,1,2.878-.534c1.634-.075,2.125-.09,6.263-.09h0c4.139,0,4.629.016,6.264.091a8.577,8.577,0,0,1,2.878.534,4.806,4.806,0,0,1,1.782,1.159,4.8,4.8,0,0,1,1.159,1.782,8.568,8.568,0,0,1,.534,2.878c.075,1.634.09,2.125.09,6.263s-.016,4.629-.09,6.264Zm0,0"
+          transform="translate(0 0)" />
+        <path
+          d="M132.5,124.539a7.959,7.959,0,1,0,7.96,7.96A7.96,7.96,0,0,0,132.5,124.539Zm0,13.126a5.167,5.167,0,1,1,5.167-5.167A5.167,5.167,0,0,1,132.5,137.665Zm0,0"
+          transform="translate(-116.999 -116.999)" />
+        <path d="M365.65,90.485a1.86,1.86,0,1,1-1.86-1.86A1.86,1.86,0,0,1,365.65,90.485Zm0,0"
+          transform="translate(-340.016 -83.259)" />
+      </symbol>
+      <symbol id="icon-facebook" viewBox="0 0 31 31">
+        <g transform="translate(-1221 -6123)">
+          <rect rx="6" transform="translate(1221 6123)" fill="#fff" />
+          <path
+            d="M17.077,4.424h2.432V.188A31.407,31.407,0,0,0,15.966,0c-7.7,0-5.6,8.714-5.908,9.991H6.187v4.736h3.87V26.642H14.8V14.728h3.713L19.1,9.992H14.8c.209-3.135-.845-5.568,2.277-5.568Z"
+            transform="translate(1227.813 6127.358)" />
+        </g>
+      </symbol>
+      <symbol id="icon-vk" viewBox="0 0 31 31">
+        <g transform="translate(-1262 -6123)">
+          <g>
+            <rect rx="6" transform="translate(1262 6123)" fill="#fff" />
+            <path
+              d="M16.909,118.2a26.743,26.743,0,0,1,1.924,1.935,5.624,5.624,0,0,1,.69.994c.265.513.025,1.079-.435,1.109H16.225a2.21,2.21,0,0,1-1.822-.741c-.4-.4-.763-.833-1.144-1.25a2.711,2.711,0,0,0-.515-.458.6.6,0,0,0-.953.232,3.007,3.007,0,0,0-.3,1.335c-.031.674-.234.851-.911.882a7.319,7.319,0,0,1-4.1-.881,9.049,9.049,0,0,1-2.756-2.58A34.737,34.737,0,0,1,.1,112.308c-.229-.51-.062-.783.5-.793.934-.018,1.867-.017,2.8,0a.823.823,0,0,1,.777.582,17.37,17.37,0,0,0,1.9,3.519,3,3,0,0,0,.717.789.436.436,0,0,0,.741-.218,2.442,2.442,0,0,0,.165-.738,10.992,10.992,0,0,0-.046-2.587,1.078,1.078,0,0,0-.918-.987c-.274-.052-.233-.154-.1-.31a1.029,1.029,0,0,1,.878-.437h3.235c.509.1.622.329.692.842l0,3.593c-.006.2.1.787.456.918.286.093.474-.135.646-.317a11.141,11.141,0,0,0,1.821-2.8c.219-.442.408-.9.59-1.361a.693.693,0,0,1,.731-.5l3.113,0a1.641,1.641,0,0,1,.275.017c.525.089.668.315.506.827a7.773,7.773,0,0,1-1.238,2.146c-.519.718-1.074,1.412-1.589,2.135-.473.66-.435.993.152,1.566Z"
+              transform="translate(1267.677 6021.814)" />
+          </g>
+        </g>
+      </symbol>
+    </svg>
+  </div>
+
+  <header class="header">
+    <div class="top-bar">
+      <div class="top-bar__container container">
+        <p class="top-bar__content">
+          Ищите знания<br>
+          в приложении Sokrat.
+        </p>
+        <a href="#" class="btn btn--pink" id="app">Скачать</a>
+      </div>
+    </div>
+    <div class="header__wrapper">
+      <div class="header__inner-wrapper">
+        <a class="logo" href="index.html">
+          <img class="logo__img" src="img/sokrat-logo.svg" width="198" height="40" alt="На главную">
+        </a>
+        <div class="search search--hidden">
+          <form class="search__form" role="search" method="get" id="search__form-header" action="#">
+            <label class="visually-hidden" for="search__input">Поиск по курсам</label>
+            <input class="search__input" id="search__input" type="text" placeholder="Поиск по курсам" value="" name="s">
+            <button class="search__submit-btn" type="submit" id="search__submit-btn">Найти</button>
+            <button class="search__close-btn" type="button" id="search__close-btn"></button>
+          </form>
+        </div>
+        <div class="user">
+          <div class="user__bookmark" id="compare">
+            <img src="img/list.svg" alt="" class="user__bookmark-img" width="31" height="20">
+          </div>
+          <div class="user__login">
+            <p class="user__greeting">Привет, <span class="user__name">Друг</span></p>
+            <p class="user__text">Что нового узнаем сегодня?</p>
+          </div>
+          <div class="user__photo">
+            <img src="img/camera-icon.svg" alt="" class="user__photo-img" width="16" height="14">
+          </div>
+          <div class="user__search" id="search">
+            <img src="img/search-icon.svg" alt="" class="user__search-img" width="31" height="20">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button">
+        <img src="img/menu.svg" alt="Открыть меню" class="main-nav__toggle-img" width="30" height="30">
+      </button>
+      <nav class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--mobile">Личный кабинет</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Все курсы</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link">Вакансии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#" class="main-nav__link main-nav__link--mobile">Избранное</a>
+          </li>
+        </ul>
+      </nav>
+      <p class="main-nav__indicator indicator main-nav__indicator--checked-closed"></p>
+    </div>
+  </header>
+  <main class="main">
+    <header class="page-header">
+      <div class="page-header__plug-img">
+        <button class="page-header__add-list">
+          <svg class="page-header__list-img" xmlns="http://www.w3.org/2000/svg" width="34.859" height="23" viewBox="0 0 34.859 23" alt="">
+            <g id="Group_8966" data-name="Group 8966" transform="translate(-1554 -217)">
+              <line id="Line_164" data-name="Line 164" x1="31.859" transform="translate(1555.5 218.5)" fill="none" stroke="#24272d" stroke-linecap="round" stroke-width="3"/>
+              <line id="Line_165" data-name="Line 165" x1="15.93" transform="translate(1555.5 228.5)" fill="none" stroke="#24272d" stroke-linecap="round" stroke-width="3"/>
+              <g id="Group_8961" data-name="Group 8961" transform="translate(1576.615 228.5)">
+                <line id="Line_167" data-name="Line 167" x1="10.744" transform="translate(0 5)" fill="none" stroke="#24272d" stroke-linecap="round" stroke-width="3"/>
+                <line id="Line_168" data-name="Line 168" x1="10" transform="translate(5.372 0) rotate(90)" fill="none" stroke="#24272d" stroke-linecap="round" stroke-width="3"/>
+              </g>
+              <line id="Line_166" data-name="Line 166" x1="12.39" transform="translate(1555.5 238.5)" fill="none" stroke="#24272d" stroke-linecap="round" stroke-width="3"/>
+            </g>
+          </svg>
+        </button>
+        <img src="img/page-header-logo.png" alt="Начни учиться в Sokrart." class="page-header__logo">
+        <img src="img/page-course-img.svg" alt="" class="page-header__course-img">
+      </div>
+    </header>
+    <div class="practice">
+      <div class="practice__wrapper">
+        <div class="practice__info">
+          <h1 class="practice__title">Frontend Developer</h1>
+          <p class="practice__price">Оплата: <span>10 000 ₽/мес.</span></p>
+          <p class="practice__description">
+            Курс General Management программы MBA предназначен для подготовки
+            элитных руководителей, которые владеют фундаментальными знаниями
+            о современном состоянии экономики, обладают глубоким пониманием
+            логики стратегического...
+          </p>
+        </div>
+
+        <div class="practice__skills-hard skills">
+          <p>Hard Skills</p>
+          <ul class="skills__list">
+            <li class="skills__item">CSS</li>
+            <li class="skills__item">CSS</li>
+            <li class="skills__item">CSS</li>
+            <li class="skills__item">HTML</li>
+            <li class="skills__item">HTML</li>
+            <li class="skills__item">HTML</li>
+            <li class="skills__item">GitHub</li>
+            <li class="skills__item">GitHub</li>
+            <li class="skills__item">GitHub</li>
+          </ul>
+        </div>
+        <div class="practice__skills-soft skills">
+          <p>Soft Skills</p>
+          <ul class="skills__list">
+            <li class="skills__item">CSS</li>
+            <li class="skills__item">CSS</li>
+            <li class="skills__item">CSS</li>
+            <li class="skills__item">HTML</li>
+            <li class="skills__item">HTML</li>
+            <li class="skills__item">HTML</li>
+            <li class="skills__item">GitHub</li>
+            <li class="skills__item">GitHub</li>
+            <li class="skills__item">GitHub</li>
+          </ul>
+        </div>
+        <div class="practice__sidebar sidebar">
+          <p class="sideba__title">Партнер</p>
+
+          <div class="sidebar__partner">
+            <a href="#" class="sidebar__partner-img-link">
+              <img src="img/course-partner-logo@2x.png" alt="Государственный университет
+              управления" class="sidebar__partner-img">
+            </a>
+            <p class="sidebar__partner-title">
+              <a href="#" class="sidebar__partner-link">KRON</a>
+            </p>
+          </div>
+          <div class="sidebar__details">
+            <p class="sidebar__sidebar-title">Детали стажировки</p>
+            <ul class="sidebar__details-list">
+              <li class="sidebar__details-item sidebar__details-item--duration">
+                <p class="sidebar__details-title">Продолжительность</p>
+                <p class="sidebar__details-info">1-3 месяца</p>
+              </li>
+              <li class="sidebar__details-item sidebar__details-item--format">
+                <p class="sidebar__details-title">Тип стажировки</p>
+                <p class="sidebar__details-info">Удаленная</p>
+              </li>
+              <li class="sidebar__details-item sidebar__details-item--invoice">
+                <p class="sidebar__details-title">График</p>
+                <p class="sidebar__details-info">Свободная</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="practice__invite">
+          <a href="#" class="practice__invite-btn">Хочу устроиться</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Similar courses  -->
+    <section class="carousel carousel--full">
+
+      <div class="carousel__wrapper">
+        <h2 class="carousel__title">Еще курсы по этой теме</h2>
+
+        <div class="carousel__list">
+
+          <div class="carousel__item">
+            <a href="#" class="carousel__img-link">
+              <img src="img/girls.svg" alt="" class="carousel__img">
+              <div class="carousel__item-info">
+                <p class="carousel__item-price">700 000 ₽</p>
+                <p class="carousel__item-duration">23 месяца</p>
+              </div>
+              <p class="carousel__item-title">Философия искусственного интеллекта</p>
+            </a>
+            <a href="#" class="carousel__item-btn">Подробнее</a>
+          </div>
+
+          <div class="carousel__item">
+            <a href="#" class="carousel__img-link">
+              <img src="img/girls.svg" alt="" class="carousel__img">
+              <div class="carousel__item-info">
+                <p class="carousel__item-price">700 000 ₽</p>
+                <p class="carousel__item-duration">23 месяца</p>
+              </div>
+              <p class="carousel__item-title">Философия искусственного интеллекта</p>
+            </a>
+            <a href="#" class="carousel__item-btn">Подробнее</a>
+          </div>
+
+          <div class="carousel__item">
+            <a href="#" class="carousel__img-link">
+              <img src="img/girls.svg" alt="" class="carousel__img">
+              <div class="carousel__item-info">
+                <p class="carousel__item-price">700 000 ₽</p>
+                <p class="carousel__item-duration">23 месяца</p>
+              </div>
+              <p class="carousel__item-title">Философия искусственного интеллекта</p>
+            </a>
+            <a href="#" class="carousel__item-btn">Подробнее</a>
+          </div>
+
+          <div class="carousel__item">
+            <a href="#" class="carousel__img-link">
+              <img src="img/girls.svg" alt="" class="carousel__img">
+              <div class="carousel__item-info">
+                <p class="carousel__item-price">700 000 ₽</p>
+                <p class="carousel__item-duration">23 месяца</p>
+              </div>
+              <p class="carousel__item-title">Философия искусственного интеллекта</p>
+            </a>
+            <a href="#" class="carousel__item-btn">Подробнее</a>
+          </div>
+
+          <div class="carousel__btn-next"></div>
+          <div class="carousel__btn-prev"></div>
+        </div>
+      </div>
+    </section>
+    <section class="popup-work popup-work--hidden">
+      <form class="popup-work__form" action="">
+        <h2 class="popup-work__title">Отклик на вакансию</h2>
+        <button class="popup-work__close" type="button"></button>
+        <fieldset class="popup-work__fieldset fieldset">
+          <legend class="fieldset__title">Контактные данные</legend>
+          <ul class="fielset__input-list">
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="last-name">Ваша фамилия</label>
+              <input class="input__field" type="text" id="last-name" placeholder="Введите вашу фамилию">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="first-name">Введите ваше имя</label>
+              <input class="input__field" type="text" id="first-name" placeholder="Ваше имя">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="patronomic">Введите ваше отчество</label>
+              <input class="input__field" type="text" id="patronomic" placeholder="Ваше отчество">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="phone">Ваш номер телефона</label>
+              <input class="input__field" type="number" id="phone" placeholder="+7 (920) 123 45 67">
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="email">Ваш email</label>
+              <input class="input__field" type="email" id="email" placeholder="Введите вашу почту">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="popup-work__fieldset fieldset">
+          <legend class="fieldset__title">Данные о вакансии</legend>
+          <ul class="fielset__input-list">
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="course-id">id вакансии</label>
+              <input class="input__field" type="number" id="course-id" value="123456" readonly>
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="course-name">Название вакансии</label>
+              <input class="input__field" type="text" id="course-name" value="Философия искусственного интеллекта" readonly>
+            </li>
+            <li class="fieldset__input-item input">
+              <label class="input__label" for="partner">Партнер вакансии</label>
+              <input class="input__field" type="text" id="partner" value="Skillbox" readonly>
+            </li>
+          </ul>
+        </fieldset>
+        <p class="popup-work__info">
+          Нажимая откликнуться, вы соглашаетесь
+          с нашей <a class="popup-work__confidentiality" id="confidentiality" href="#">Политикой конфиденциальности</a>
+        </p>
+        <button class="popup-work__button-pay btn btn--disabled" type="submit" id="accept" disabled>Откликнуться</button>
+      </form>
+    </section>
+    <section class="popup-congratulation popup-congratulation--hidden">
+      <div class="popup-congratulation__block">
+        <h2 class="popup-congratulation__title">Ваша отклик принят!</h2>
+        <p class="popup-congratulation__gratitude">
+          Спасибо за отлик! В ближайшее
+          время к вам на почту придет вся
+          информация по вакансии!
+        </p>
+        <button class="popup-congratulation__button btn">Хорошо</button>
+      </div>
+    </section>
+    <section class="popup-cookie popup-cookie--hidden">
+      <div class="popup-cookie__block">
+        <p class="popup-cookie__text">
+          Мы, как и все,
+          используем <a class="popup-cookie__link" id="cookie" href="#">cookie</a>
+        </p>
+        <button class="popup-cookie__button btn" id="app">Я понимаю</button>
+      </div>
+    </section>
+    <section class="popup-cookie-info popup-cookie-info--hidden">
+      <div class="popup-cookie-info__block">
+        <h2 class="popup-cookie-info__title">Сookie</h2>
+        <button class="popup-cookie-info__close" type="button"></button>
+        <p class="popup-cookie-info__text">
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+        </p>
+      </div>
+    </section>
+    <section class="popup-app popup-app--hidden">
+      <div class="popup-app__block">
+        <button class="popup-app__close" type="button"></button>
+        <p class="popup-app__slogan">Удобнее искать знания в приложении</p>
+        <p class="popup-app__text">
+          Скачайте мобильное приложение
+          Sokrat., чтобы иметь самый быстрый
+          доступ к новым курсам.
+        </p>
+        <div class="popup-app__links">
+          <a class="popup-app__link" href="#">
+            <img class="popup-app__img popup-app__img--store" src="img/app-store-btn.svg" alt="Скачать с App Store" width="200" height="67">
+          </a>
+          <a class="popup-app__link" href="#">
+            <img class="popup-app__img popup-app__img--google" src="img/google-play-btn.svg" alt="Скачать Google Play" width="247" height="67">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="popup-compare popup-compare--hidden">
+      <div class="popup-compare__block">
+        <h2 class="popup-compare__title">Сравните курсы</h2>
+        <button class="popup-compare__close" type="button">Добавить курс</button>
+        <ul class="popup-compare__list">
+          <li class="popup-compare__item popup-compare__item--titles">
+            <p class="popup-compare__title-name">Название курса</p>
+            <p class="popup-compare__title-name">Прожолжительность</p>
+            <p class="popup-compare__title-name">Цена</p>
+          </li>
+          <li class="popup-compare__item">
+            <p class="popup-compare__name">Мва – general management</p>
+            <p class="popup-compare__duration">4 месяца</p>
+            <p class="popup-compare__price">100.000</p>
+            <button class="popup-compare__btn btn">Купить курс</button>
+          </li>
+          <li class="popup-compare__item">
+            <p class="popup-compare__name">Мва – general management</p>
+            <p class="popup-compare__duration">4 месяца</p>
+            <p class="popup-compare__price">100.000</p>
+            <button class="popup-compare__btn btn">Купить курс</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="popup-confidentiality popup-confidentiality--hidden">
+      <div class="popup-confidentiality__block">
+        <h2 class="popup-confidentiality__title">Frontend Developer</h2>
+        <button class="popup-confidentiality__close" type="button"></button>
+        <p class="popup-confidentiality__text">
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+        </p>
+      </div>
+    </section>
+    <section class="popup-conditions popup-conditions--hidden">
+      <div class="popup-conditions__block">
+        <h2 class="popup-conditions__title">Условия использования</h2>
+        <button class="popup-conditions__close" type="button"></button>
+        <p class="popup-conditions__text">
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+          Текст политики Текст политики Текст политики Текст политики Текст политики Текст политики Текст
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__col-wrapper">
+        <div class="footer__nav-wrapper">
+          <p class="footer__nav-title">Пользователям</p>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Все курсы</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Консультант</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Оплата обучения</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav-wrapper">
+          <p class="footer__nav-title">Партнерам</p>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Как это работает?</a>
+            </li>
+            <li class="footer__nav-item">
+              <a href="#" class="footer__nav-link">Подключиться</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__socials socials">
+        <p class="socials__title">Мы в социальных сетях</p>
+        <ul class="socials__list">
+          <li class="socials__item">
+            <span class="visually-hidden">Ссылка на инстаграм</span>
+            <a href="#" class="socials__link">
+              <svg class="socials__icon socials__icon--instagram" width="31" height="31">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <span class="visually-hidden">Фейсбук</span>
+            <a href="#" class="socials__link">
+              <svg class="socials__icon socials__icon--facebook" width="31" height="31">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <span class="visually-hidden">Ссылка на ВКонтакте</span>
+            <a href="#" class="socials__link">
+              <svg class="socials__icon socials__icon--vk" width="31" height="31">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <span class="visually-hidden">Ссылка на Яндекс Дзен</span>
+            <a href="#" class="socials__link">
+              <img src="img/yandex-zen-icon.svg" alt="ссылка на Яндекс Дзен"
+                class="socials__icon socials__icon--yandex-zen" width="31" height="31">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__logo logo logo--footer">
+        <a href="#" class="logo__link">
+          <img src="img/sokrat-logo.svg" alt="Sokrat Logo" class="logo__img--footer" width="223" height="51">
+        </a>
+        <p class="logo__text">Тысячи знаний внутри</p>
+      </div>
+      <div class="footer__download download">
+        <p class="download__title">Скачай на свой телефон</p>
+        <div class="download__btn-wrapper">
+          <a href="#" class="download__btn-link download__btn-link--appstore">
+            <img src="img/app-store-btn.svg" alt="Скачать с App Store" class="download__btn-appstore-img" width="135"
+              height="45">
+          </a>
+          <a href="#" class="download__btn-link download__btn-link--gplay">
+            <img src="img/google-play-btn.svg" alt="Скачать Google Play" class="download__btn-gplay-img" width="152"
+              height="45">
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom-bar">
+      <div class="bottom-bar__wrapper">
+        <ul class="bottom-bar__nav-list">
+            <li class="bottom-bar__nav-item">
+            <a href="#" class="bottom-bar__nav-link" id="conditions">Условия использования</a>
+          </li>
+          <li class="bottom-bar__nav-item">
+            <a href="#" class="bottom-bar__nav-link" id="confidentiality">Политика конфиденциальности</a>
+          </li>
+        </ul>
+
+        <p class="bottom-bar__copyright">© <span class="bottom-bar__copyright-year">2021</span> Sokrat. Все права
+          защищены</p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js" type="module"></script>
+</body>
+
+</html>

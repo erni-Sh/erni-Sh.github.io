@@ -1,0 +1,28 @@
+.top-bar {
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+  padding-bottom: 3px;
+
+  background-color: $black;
+  color: $white;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.top-bar__container {
+  display: flex;
+}
+
+.top-bar__content {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 55px;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 22px;
+  color: $white;
+}
