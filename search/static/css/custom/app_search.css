@@ -1,0 +1,246 @@
+.search-input {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  padding: 16px 0;
+  background: transparent;
+  color: #252525;
+  border: 2px solid #E3E3E3;
+  border-radius: 25px;
+  outline: none;
+  z-index: 2;
+  -webkit-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+.search-input__form {
+  position: absolute;
+  right: 0;
+  top: 38px;
+  background: white;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+.search-input__form_isReady {
+  opacity: 1;
+  z-index: 10;
+}
+.search-input__fieldset {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: #F3F3F3;
+  border-radius: 25px;
+  z-index: 2;
+  -webkit-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+.search-input__fieldset_isOpened {
+  background: white;
+}
+.search-input__icon-search {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 16px;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+.search-input__icon-search svg path {
+  -webkit-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+.search-input__icon-clear {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  right: 16px;
+  z-index: 3;
+  -webkit-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+}
+.search-input__icon-clear svg {
+  float: left;
+}
+.search-input::-webkit-input-placeholder {
+  color: black;
+  opacity: 0;
+}
+.search-input::-moz-placeholder {
+  color: black;
+  opacity: 0;
+}
+.search-input:-ms-input-placeholder {
+  color: black;
+  opacity: 0;
+}
+.search-input::-ms-input-placeholder {
+  color: black;
+  opacity: 0;
+}
+.search-input::placeholder {
+  color: black;
+  opacity: 0;
+}
+.search-input:focus, .search-input:focus-visible {
+  border: 2px solid #6550BE;
+}
+.search-input:focus svg path, .search-input:focus-visible ~ .search-input__icon-search svg path {
+  fill: #6550BE;
+}
+.search-input:not(:-moz-placeholder-shown) {
+  width: 356px;
+  padding-right: 39px;
+  padding-left: 48px;
+}
+.search-input:not(:-ms-input-placeholder) {
+  width: 356px;
+  padding-right: 39px;
+  padding-left: 48px;
+}
+.search-input:not(:placeholder-shown), .search-input:focus, .search-input_isOpened {
+  width: 356px;
+  padding-right: 39px;
+  padding-left: 48px;
+}
+.search-input:not(:placeholder-shown)::-webkit-input-placeholder, .search-input:focus::-webkit-input-placeholder, .search-input_isOpened::-webkit-input-placeholder {
+  opacity: 0.2;
+}
+.search-input:not(:placeholder-shown)::-moz-placeholder, .search-input:focus::-moz-placeholder, .search-input_isOpened::-moz-placeholder {
+  opacity: 0.2;
+}
+.search-input:not(:placeholder-shown):-ms-input-placeholder, .search-input:focus:-ms-input-placeholder, .search-input_isOpened:-ms-input-placeholder {
+  opacity: 0.2;
+}
+.search-input:not(:placeholder-shown)::-ms-input-placeholder, .search-input:focus::-ms-input-placeholder, .search-input_isOpened::-ms-input-placeholder {
+  opacity: 0.2;
+}
+.search-input:not(:-moz-placeholder-shown)::placeholder {
+  opacity: 0.2;
+}
+.search-input:not(:-ms-input-placeholder)::placeholder {
+  opacity: 0.2;
+}
+.search-input:not(:placeholder-shown)::placeholder, .search-input:focus::placeholder, .search-input_isOpened::placeholder {
+  opacity: 0.2;
+}
+.search-input_isOpened ~ .search-input__icon-search {
+  z-index: 3;
+}
+.search-input:not(:-moz-placeholder-shown) ~ .search-input__icon-clear {
+  opacity: 1;
+  visibility: visible;
+}
+.search-input:not(:-ms-input-placeholder) ~ .search-input__icon-clear {
+  opacity: 1;
+  visibility: visible;
+}
+.search-input:not(:placeholder-shown) ~ .search-input__icon-clear {
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (max-width: 611px) {
+  .search-input__form {
+    top: 17px;
+  }
+  .search-input:not(:-moz-placeholder-shown) {
+    width: calc(100vw - 30px);
+  }
+  .search-input:not(:-ms-input-placeholder) {
+    width: calc(100vw - 30px);
+  }
+  .search-input:not(:placeholder-shown), .search-input:focus, .search-input_isOpened {
+    width: calc(100vw - 30px);
+  }
+}
+.search-input__suggestions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: 0 25px;
+      -ms-transform-origin: 0 25px;
+          transform-origin: 0 25px;
+  padding: 0 17px;
+  background: #F3F3F3;
+  border-radius: 25px;
+  -webkit-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+.search-input__suggestions_isActive {
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+}
+.search-input__suggestions__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 63px 0 13px;
+  font-weight: 800;
+}
+.search-input__suggestions__clear {
+  color: #6550BE;
+  cursor: pointer;
+}
+.search-input__suggestions__content {
+  max-height: 175px;
+  overflow-y: auto;
+  margin-bottom: 17px;
+  -webkit-transition: 0.4s ease all;
+  -o-transition: 0.4s ease all;
+  transition: 0.4s ease all;
+  background-color: inherit;
+  -webkit-background-clip: text;
+}
+.search-input__suggestions__content::-webkit-scrollbar {
+  width: 6px;
+}
+.search-input__suggestions__content::-webkit-scrollbar-track {
+  border: 19px solid transparent;
+  border-radius: 1000px;
+  background-color: inherit;
+  background-clip: padding-box;
+}
+.search-input__suggestions__content::-webkit-scrollbar-thumb {
+  border-radius: 1000px;
+  background-color: #bbbaba;
+  background-clip: padding-box;
+}
+.search-input__suggestions__item {
+  padding: 4px 0;
+  cursor: pointer;
+}
+/*# sourceMappingURL=app_search.css.map */
