@@ -146,8 +146,8 @@ window.addEventListener('DOMContentLoaded', () => {
     },
 
     setRandomClickCount() {
-      this.clickCounter = getRandomInt(1, 1); // for dev
-      // this.clickCounter = getRandomInt(3, 8);
+      // this.clickCounter = getRandomInt(1, 1); // for dev
+      this.clickCounter = getRandomInt(3, 8);
     },
 
     // -------- MODAL --------

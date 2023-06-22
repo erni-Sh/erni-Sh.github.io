@@ -69,8 +69,8 @@
 }
 .catfishTop__left {
   position: relative;
-  padding: 96px 0 0;
-  max-width: 47%;
+  padding: 96px 0 60px;
+  max-width: 389px;
 }
 .catfishTop__logo {
   display: block;
@@ -87,12 +87,12 @@
   font-size: 40px;
   max-width: 40vw;
   margin-bottom: 3px;
+  white-space: nowrap;
 }
 .catfishTop__descr {
   font-weight: 400;
   font-size: 18px;
   line-height: 133%;
-  max-width: 389px;
 }
 .catfishTop__spacer {
   height: 27px;
@@ -236,19 +236,20 @@
   -webkit-transition: 0.3s ease-in-out all;
   -o-transition: 0.3s ease-in-out all;
   transition: 0.3s ease-in-out all;
-  animation: 7s fishRotate alternate-reverse ease-in-out infinite;
 }
 .catfishTop__body_isSwimAway {
   -webkit-transition: 2s linear all;
   -o-transition: 2s linear all;
   transition: 2s linear all;
+  left: 150%;
+}
+.catfishTop__body_isSwimAway > svg {
   animation: 0.3s fishRotate alternate-reverse ease-in-out infinite;
-  left: 300vw !important;
 }
 .catfishTop__body > svg {
   width: 100%;
   height: 100%;
-  animation: 5s fishSwimming alternate-reverse ease-in-out infinite;
+  animation: 5s fishSwimming alternate-reverse ease-in-out infinite, 7s fishRotate alternate-reverse ease-in-out infinite;
 }
 .catfishTop__body > svg > g {
   animation: 5s fishShadow alternate-reverse ease-in-out infinite;
@@ -256,9 +257,32 @@
       -ms-transform-origin: center;
           transform-origin: center;
 }
+@media screen and (max-width: 939px) {
+  .catfishTop__reactions, .catfishTop__notify {
+    right: 97px;
+    bottom: 0;
+  }
+  .catfishTop__reaction > svg {
+    height: 20px;
+  }
+  .catfishTop__notify {
+    font-size: 18px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    width: calc(100vw - 342px - 48px - 98px - 24px);
+    text-align: left;
+  }
+}
+@media screen and (max-width: 757px) {
+  .catfishTop__notify {
+    max-width: none;
+    white-space: normal;
+  }
+}
 @media screen and (max-width: 661px) {
   .catfishTop {
-    background-position: 61% 50%;
+    background-position: 70% 50%;
     background-size: auto 112%;
   }
   .catfishTop__wrapper {
@@ -266,7 +290,7 @@
   }
   .catfishTop__left {
     max-width: 100%;
-    padding-top: 83px;
+    padding: 83px 0 43px;
   }
   .catfishTop__logo {
     display: none;
@@ -280,7 +304,7 @@
     max-width: 100%;
   }
   .catfishTop__spacer {
-    height: 354px;
+    height: 377px;
   }
   .catfishTop__reactions, .catfishTop__notify {
     right: auto;
@@ -291,27 +315,29 @@
     left: -25px;
     right: auto;
   }
-  .catfishTop__reaction > svg {
-    height: 20px;
-  }
   .catfishTop__notify {
-    font-size: 18px;
+    width: 100%;
     max-width: calc(100% - 96px);
-    white-space: normal;
-    text-align: left;
   }
   .catfishTop__button {
     display: block;
     text-align: center;
-    min-height: 119px;
   }
   .catfishTop__body {
     left: auto;
+    right: 37%;
     top: 350px;
+    -webkit-transform: translate(10%, -50%);
+        -ms-transform: translate(10%, -50%);
+            transform: translate(10%, -50%);
+  }
+  .catfishTop__body_isSwimAway {
+    left: auto;
+    right: -160vw;
   }
   .catfishTop__right {
     width: calc(100% - 48px);
-    bottom: 151px;
+    bottom: 125px;
   }
 }
 
@@ -397,11 +423,10 @@
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  animation: 7s fishRotate alternate-reverse ease-in-out infinite;
 }
 .landingModal__catfish > svg {
   width: 257px;
-  animation: 5s fishSwimming alternate-reverse ease-in-out infinite;
+  animation: 7s fishRotate alternate-reverse ease-in-out infinite, 5s fishSwimming alternate-reverse ease-in-out infinite;
 }
 .landingModal__catfish > svg > g {
   animation: 5s fishShadow alternate-reverse ease-in-out infinite;
@@ -501,62 +526,58 @@
 }
 @-webkit-keyframes fishRotate {
   0% {
-    -webkit-transform: translate(-50%, -50%) rotate(3deg);
-            transform: translate(-50%, -50%) rotate(3deg);
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
   }
   100% {
-    -webkit-transform: translate(-50%, -50%) rotate(-3deg);
-            transform: translate(-50%, -50%) rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
   }
 }
 @keyframes fishRotate {
   0% {
-    -webkit-transform: translate(-50%, -50%) rotate(3deg);
-            transform: translate(-50%, -50%) rotate(3deg);
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
   }
   100% {
-    -webkit-transform: translate(-50%, -50%) rotate(-3deg);
-            transform: translate(-50%, -50%) rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
   }
 }
 @-webkit-keyframes fishSwimming {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    width: 100%;
   }
   100% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    width: 105%;
   }
 }
 @keyframes fishSwimming {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    width: 100%;
   }
   100% {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    width: 105%;
   }
 }
 @-webkit-keyframes fishShadow {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1) translateX(0px);
+            transform: scale(1) translateX(0px);
   }
   100% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(0.82) translateX(-5%);
+            transform: scale(0.82) translateX(-5%);
   }
 }
 @keyframes fishShadow {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    -webkit-transform: scale(1) translateX(0px);
+            transform: scale(1) translateX(0px);
   }
   100% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(0.82) translateX(-5%);
+            transform: scale(0.82) translateX(-5%);
   }
 }
 @-webkit-keyframes reactionMove {
