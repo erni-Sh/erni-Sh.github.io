@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutSorce Landing</title>
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo"></a>
+        <nav class="header__navbar">
+          <a href="#lead" class="header__link">Home</a
+          ><a href="#whatsnew" class="header__link">Overview</a
+          ><a href="#sonic" class="header__link">Features</a
+          ><a href="#faq" class="header__link">FAQ</a>
+          <a href="#trial" class="header__link">Try now</a>
+        </nav>
+        <a
+          href="https://ng.builds.io/auth/sign-up?segment=trial"
+          class="header__button"
+          >Sign In</a
+        >
+        <button class="header__burger-button" type="button"></button>
+      </div>
+    </header>
+    <div class="menu">
+      <nav class="menu__navbar">
+        <a href="#lead" class="menu__link">Home</a
+        ><a href="#whatsnew" class="menu__link">Overview</a
+        ><a href="#sonic" class="menu__link">Features</a
+        ><a href="#faq" class="menu__link">FAQ</a>
+        <a href="#trial" class="menu__link">Try now</a>
+        <a
+          href="https://ng.builds.io/auth/sign-up?segment=trial"
+          class="menu__button"
+          >Sign In</a
+        >
+      </nav>
+    </div>
+    <main class="main">
+      <section class="lead" id="lead">
+        <div class="lead__container js-observer">
+          <div class="lead__block">
+            <h1 class="lead__title">New BuildS.io is Now Available</h1>
+            <a href="" class="lead__button action-button"
+              >Try 7 days for free</a
+            >
+            <p class="lead__subtitle">*Available on iPhone/iPad/iPod</p>
+            <p class="lead__subtitle">
+              *10 days free of charge, taking into account 3-day processing
+            </p>
+          </div>
+          <div class="lead__block container">
+            <div class="lead__splash"></div>
+            <img src="/lead.png" alt="" class="lead__image js-observer" onload="this.classList.add('isVisible')"/>
+          </div>
+        </div>
+        <div class="lead__container lead__container_mobile js-observer">
+          <h1 class="lead__title">New BuildS.io is Now Available</h1>
+          <div class="lead__block">
+            <div class="lead__splash"></div>
+            <img src="/lead.png" alt="" class="lead__image" />
+          </div>
+          <div class="lead__block">
+            <a href="" class="lead__button action-button"
+              >Try 7 days for free</a
+            >
+            <p class="lead__subtitle">*Available on iPhone/iPad/iPod</p>
+            <p class="lead__subtitle">
+              *10 days free of charge, taking into account 3-day processing
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="whatsnew" id="whatsnew">
+        <div class="whatsnew__container">
+          <div class="whatsnew__buble js-observer">
+            <p class="whatsnew__buble-text">
+              Try the updated Builds.io for free for 7 days, which includes more
+              than 800 iOS apps and completely redesigned functionality.
+            </p>
+          </div>
+          <div class="whatsnew__heading js-observer">
+            <h2 class="whatsnew__title">
+              What’s <span class="whatsnew__accent">New</span>?
+            </h2>
+            <p class="whatsnew__sibtitle">
+              Watch a detailed video review and learn about all the new features
+              of our service.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="video video_mobile">
+        <div class="video__container">
+          <div class="video__box video__box_mobile">
+            <div class="video__frame video__frame_mobile">
+              <iframe
+                width="100%"
+                height="100%"
+                class="video_iframe"
+                src="https://www.youtube.com/embed/WR84XFqsDkE?si=1iKokvHfnYozVlpM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video">
+        <div class="video__container">
+          <img
+            src="/video_girl.png"
+            class="video__image js-observer"
+            onload="this.classList.add('isVisible')"
+          />
+          <div class="video__box">
+            <div class="video__frame">
+              <iframe
+                width="100%"
+                height="100%"
+                class="video_iframe"
+                src="https://www.youtube.com/embed/WR84XFqsDkE?si=1iKokvHfnYozVlpM"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="girl">
+        <img
+          src="/video_girl.png"
+          alt=""
+          class="girl__img js-observer"
+          onload="this.classList.add('isVisible')"
+        />
+        <div class="girl__buble">
+          <p class="girl__text">
+            Try the updated Builds.io for free for 7 days, which includes more
+            than 800 iOS apps and completely redesigned functionality.
+          </p>
+        </div>
+      </section>
+
+      <section class="feat">
+        <div class="feat__container">
+          <h1 class="feat__title js-observer">
+            Now Featuring <span class="feat__span">800 Apps</span>
+          </h1>
+          <div class="feat__buble js-observer">
+            <p class="feat__buble-text">Our store is routinely updated,</p>
+            <p class="feat__buble-text">
+              ensuring a robust catalog featuring over
+              <span class="feat__span feat__span_buble">800</span> applications
+              and
+              <span class="feat__span feat__span_buble">4000+</span>
+            </p>
+            <p class="feat__buble-text">
+              versions tailored to your preferences.
+            </p>
+          </div>
+          <img data-src="feat_gadgets.png" src="feat_gadgets.png" alt="ipad" class="feat__ipad-image js-observer" onload="this.classList.add('isVisible')"/>
+
+          <div class="feat__description js-observer">
+            <p class="feat__description-title">Additional</p>
+            <p class="feat__text">Advanced Search and Category Filtering</p>
+            <p class="feat__text">Request Your Favorites</p>
+            <p class="feat__text">Instant iOS Integration</p>
+          </div>
+          <a href="#" class="feat__button action-button">Start now</a>
+        </div>
+      </section>
+      <section class="carousel">
+        <svg
+          class="carousel__bg"
+          xmlns="http://www.w3.org/2000/svg"
+          width="100vw"
+          height="2254"
+          viewBox="0 0 1440 2140"
+          fill="none"
+        >
+          <path
+            d="M0 530.5L1442 0V2016L721 2139.5L0 2016L0 530.5Z"
+            fill="url(#paint0_linear_11583_9698)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_11583_9698"
+              x1="35.4999"
+              y1="706"
+              x2="1540.79"
+              y2="2563.19"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#0C1035" />
+              <stop offset="0.44546" stop-color="#211774" />
+              <stop offset="0.912655" stop-color="#644BC1" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg
+          class="carousel__bg_mobile"
+          xmlns="http://www.w3.org/2000/svg"
+          width="320"
+          height="820"
+          viewBox="0 0 320 820"
+          fill="none"
+        >
+          <path
+            d="M-130.211 209.698L439.789 0V771L154.789 819.818L-130.211 771L-130.211 209.698Z"
+            fill="url(#paint0_linear_11583_12764)"
+          />
+          <defs>
+            <linearGradient
+              id="paint0_linear_11583_12764"
+              x1="-116.178"
+              y1="168.194"
+              x2="478.841"
+              y2="902.313"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#0C1035" />
+              <stop offset="0.44546" stop-color="#211774" />
+              <stop offset="0.912655" stop-color="#644BC1" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="carousel__container">
+          <h2 class="carousel__title js-observer">
+            popular and newest <span class="carousel__span">apps</span>
+          </h2>
+          <div class="embla">
+            <div class="embla__viewport">
+              <div class="embla__container">
+                <div class="embla__slide">
+                  <img src="/slide_1.png" alt="screen" class="embla__img" />
+                </div>
+                <div class="embla__slide">
+                  <img src="/slide_2.png" alt="screen" class="embla__img" />
+                </div>
+                <div class="embla__slide">
+                  <img src="/slide_3.png" alt="screen" class="embla__img" />
+                </div>
+                <div class="embla__slide">
+                  <img src="/slide_4.png" alt="screen" class="embla__img" />
+                </div>
+                <div class="embla__slide">
+                  <img src="/slide_5.png" alt="screen" class="embla__img" />
+                </div>
+                <div class="embla__slide">
+                  <img src="/slide_6.png" alt="screen" class="embla__img" />
+                </div>
+                <div class="embla__slide">
+                  <img src="/slide_7.png" alt="screen" class="embla__img" />
+                </div>
+                <div class="embla__slide">
+                  <img src="/slide_8.png" alt="screen" class="embla__img" />
+                </div>
+                <div class="embla__slide">
+                  <img src="/slide_9.png" alt="screen" class="embla__img" />
+                </div>
+                <div class="embla__slide">
+                  <img src="/slide_10.png" alt="screen" class="embla__img" />
+                </div>
+              </div>
+            </div>
+            <div class="embla__buttons">
+              <button
+                class="embla__button embla__button--prev"
+                type="button"
+                disabled=""
+              ></button>
+              <button
+                class="embla__button embla__button--next"
+                type="button"
+                disabled=""
+              ></button>
+            </div>
+          </div>
+          <div class="embla__dots"></div>
+        </div>
+      </section>
+      <section class="sonic" id="sonic">
+        <div class="sonic__container">
+          <h2 class="sonic__title js-observer">
+            No More <span class="span">Endless </span> Ineligible Status
+          </h2>
+          <div class="sonic__leftbox js-observer">
+            <div class="circle circle_yellow">
+              <p class="circle__text">Automatic Tracking</p>
+            </div>
+            <div class="circle circle_purple">
+              <p class="circle__text">Timely Notifications</p>
+            </div>
+            <div class="circle circle_yellow">
+              <p class="circle__text">Pause Subscription</p>
+            </div>
+            <div class="circle circle_purple">
+              <p class="circle__text">Seamless Resumption</p>
+            </div>
+          </div>
+          <div class="sonic__centerbox js-observer">
+            <img src="/sonic_bg.png" alt="app" class="sonic__central-pic" />
+          </div>
+          <div class="sonic__buble js-observer">
+            <p class="sonic__buble-text">
+              We've introduced a new system to ensure that your ineligible
+              status lasts no more than the specified
+              <span class="span">15-30 days.</span>
+            </p>
+          </div>
+          <div class="sonic__rightbox ">
+            <img src="/sonic.png" alt="sonic" class="sonic__right-pic js-observer" />
+          </div>
+          <a href="#" class="sonic__button action-button">Join now</a>
+        </div>
+      </section>
+      <section class="revoke">
+        <div class="revoke__container">
+          <div class="revoke__left-box">
+            <img src="/revoke.png" alt="revoke protect" class="revoke__img js-observer" />
+          </div>
+          <div class="revoke__right-box">
+            <h2 class="revoke__title js-observer">
+              Revoke <span class="span">Protection</span> System
+            </h2>
+            <p class="revoke__text vbar vbar_yellow js-observer">
+              Revoking an Apple certificate is no longer an issue. We have
+              optimized the allocation of slots in certificates, resulting in a
+              tenfold reduction in revocations. In the event of a certificate
+              revocation, we seamlessly transition you to a new one.
+            </p>
+            <p class="revoke__text vbar vbar_purple js-observer">
+              Our system is activated when attempting to install the
+              application. If your certificate was revoked, you will receive an
+              email notifying you of the transfer to a new certificate. All that
+              remains is to await the standard processing period, which ranges
+              from 1 to 72 hours.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="soon">
+        <div class="soon__container">
+          <h2 class="soon__title js-observer">Coming <span class="span">Soon</span></h2>
+          <p class="soon__text js-observer">
+            We do not stop there and continue to improve our service. New
+            opportunities are waiting for you, which will make your interaction
+            with our store even more exciting and effective.
+          </p>
+          <div class="soon__box js-observer">
+            <img src="/soon_img_1.png" alt="app" class="soon__image" /><img
+              src="/soon_img_2.png"
+              alt="app"
+              class="soon__image"
+            />
+            <p class="soon__label soon__label_yellow">
+              Favorable rates for 3, 6, 12 months
+            </p>
+            <p class="soon__label soon__label_purple">
+              Personalized App Recommendations
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="cta">
+        <img src="/trial-doll-1.png" alt="" class="trial__doll trial__doll_1 js-observer" onload="this.classList.add('isVisible')"/>
+        <img src="/trial-doll-2.png" alt="" class="trial__doll trial__doll_2 js-observer" onload="this.classList.add('isVisible')"/>
+        <div class="cta__container">
+          <div class="trial" id="trial">
+            <h2 class="trial__title js-observer">
+              Try New Builds.io With
+              <span class="span">7-Day Free Trial</span>
+            </h2>
+            <div class="trial__offer">
+              <p class="trial__expiration">
+                Offer is valid until <span class="span">12.12.2023</span>
+              </p>
+              <div class="trial__payways-box">
+                <img
+                  src="/icon-apple-pay.svg"
+                  alt="applpay"
+                  class="trial__payways-icon"
+                /><img
+                  src="/icon-mastercard.svg"
+                  alt="mastercard"
+                  class="trial__payways-icon"
+                /><img
+                  src="/icon-paypal.svg"
+                  alt="paypal"
+                  class="trial__payways-icon"
+                /><img
+                  src="/icon-visa.svg"
+                  alt="visa"
+                  class="trial__payways-icon"
+                />
+              </div>
+              <div class="trial__features">
+                <div class="trial__point">
+                  <img
+                    src="/icon-point-1.png"
+                    alt=""
+                    class="trial__point-img"
+                  />
+                  <p class="trial__point-text">Full App Library Access</p>
+                </div>
+                <div class="trial__point">
+                  <img
+                    src="/icon-point-2.png"
+                    alt=""
+                    class="trial__point-img"
+                  />
+                  <p class="trial__point-text">
+                    Improved Flow for “Ineligible”
+                  </p>
+                </div>
+                <div class="trial__point">
+                  <img
+                    src="/icon-point-3.png"
+                    alt=""
+                    class="trial__point-img"
+                  />
+                  <p class="trial__point-text">Revoke Protection System</p>
+                </div>
+                <div class="trial__point">
+                  <img
+                    src="/icon-point-4.png"
+                    alt=""
+                    class="trial__point-img"
+                  />
+                  <p class="trial__point-text">Custom Apps Request</p>
+                </div>
+                <div class="trial__point">
+                  <img
+                    src="/icon-point-5.png"
+                    alt=""
+                    class="trial__point-img"
+                  />
+                  <p class="trial__point-text">Supported iOS 11-17</p>
+                </div>
+                <div class="trial__point">
+                  <img
+                    src="/icon-point-6.png"
+                    alt=""
+                    class="trial__point-img"
+                  />
+                  <p class="trial__point-text">24/7 Online Customer Support</p>
+                </div>
+              </div>
+              <a href="#" class="trial__button action-button"></a>
+              <p class="trial__disclaimer">
+                Then 19,99 $ USD for each month (Renews until you cancel)
+              </p>
+            </div>
+          </div>
+          <div class="faq" id="faq">
+            <h2 class="faq__title js-observer">
+              FREQUENTLY <span class="span">ASKED</span>
+            </h2>
+            <h2 class="faq__title js-observer">QUESTIONS</h2>
+            <div class="faq__accordion-container">
+              <div class="faq__accordion-box">
+                <button class="faq__accordion">
+                  What is Builds.io NextGen?
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    fill="none"
+                    class="arrow"
+                  >
+                    <g id="subway:up-arrow" clip-path="url(#clip0_12070_152)">
+                      <path
+                        class="arrow__fill"
+                        d="M10.634 0.5L1.46875 9.66523L1.46875 15.1652L8.79922 7.83477L8.79922 22.5H12.4688L12.4688 7.83477L19.7992 15.1652L19.7992 9.66523L10.634 0.5Z"
+                        fill="#ffba07"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_12070_152">
+                        <rect
+                          width="22"
+                          height="22"
+                          fill="white"
+                          transform="translate(0 0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <div class="faq__accordion-content">
+                  <p class="faq__accordion-text">
+                    Builds.io NextGen is a completely updated alternative store
+                    for applications that are not available in the official app
+                    store.
+                  </p>
+                </div>
+              </div>
+              <div class="faq__accordion-box">
+                <button class="faq__accordion">
+                  Is Builds.io safe?
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    fill="none"
+                    class="arrow"
+                  >
+                    <g id="subway:up-arrow" clip-path="url(#clip0_12070_152)">
+                      <path
+                        class="arrow__fill"
+                        d="M10.634 0.5L1.46875 9.66523L1.46875 15.1652L8.79922 7.83477L8.79922 22.5H12.4688L12.4688 7.83477L19.7992 15.1652L19.7992 9.66523L10.634 0.5Z"
+                        fill="#ffba07"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_12070_152">
+                        <rect
+                          width="22"
+                          height="22"
+                          fill="white"
+                          transform="translate(0 0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <div class="faq__accordion-content">
+                  <p class="faq__accordion-text">
+                    Yes, Builds.io It is completely safe to use, which
+                    distinguishes it from other alternative stores. We provide
+                    security through the use of sideloading profiles, offering a
+                    completely secure solution for installing applications on
+                    iOS devices.
+                  </p>
+                </div>
+              </div>
+              <div class="faq__accordion-box">
+                <button class="faq__accordion">
+                  How to get out of the ineligible status if I have been in it
+                  for more than a month?
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    fill="none"
+                    class="arrow"
+                  >
+                    <g id="subway:up-arrow" clip-path="url(#clip0_12070_152)">
+                      <path
+                        class="arrow__fill"
+                        d="M10.634 0.5L1.46875 9.66523L1.46875 15.1652L8.79922 7.83477L8.79922 22.5H12.4688L12.4688 7.83477L19.7992 15.1652L19.7992 9.66523L10.634 0.5Z"
+                        fill="#ffba07"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_12070_152">
+                        <rect
+                          width="22"
+                          height="22"
+                          fill="white"
+                          transform="translate(0 0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <div class="faq__accordion-content">
+                  <p class="faq__accordion-text">
+                    If you've been in the ineligible status for over a month,
+                    simply navigate to your personal account, where you'll
+                    discover a designated button. Clicking on this button will
+                    promptly exit the ineligible status, granting you the
+                    ability to resume using and installing applications without
+                    any issues.
+                  </p>
+                </div>
+              </div>
+              <div class="faq__accordion-box">
+                <button class="faq__accordion">
+                  What should I do if I forgot my old password?
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    fill="none"
+                    class="arrow"
+                  >
+                    <g id="subway:up-arrow" clip-path="url(#clip0_12070_152)">
+                      <path
+                        class="arrow__fill"
+                        d="M10.634 0.5L1.46875 9.66523L1.46875 15.1652L8.79922 7.83477L8.79922 22.5H12.4688L12.4688 7.83477L19.7992 15.1652L19.7992 9.66523L10.634 0.5Z"
+                        fill="#ffba07"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_12070_152">
+                        <rect
+                          width="22"
+                          height="22"
+                          fill="white"
+                          transform="translate(0 0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <div class="faq__accordion-content">
+                  <p class="faq__accordion-text">
+                    If you've forgotten your old password for your Builds.io
+                    account, follow these steps: click on&nbsp;
+                    <a
+                      href="https://builds.io/accounts/forgot/"
+                      target="_blank"
+                      class="faq__accordion-link"
+                    >
+                      "Forgot your password?"
+                    </a>
+                    &nbsp; to initiate the password reset procedure. If you
+                    encounter any issues during this process, please submit a
+                    &nbsp;
+                    <a
+                      href="https://builds.io/support/tickets/new/"
+                      target="_blank"
+                      class="faq__accordion-link"
+                      >support ticket</a
+                    >&nbsp; for assistance.
+                  </p>
+                </div>
+              </div>
+              <div class="faq__accordion-box">
+                <button class="faq__accordion">
+                  What applications will be available to me?
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    fill="none"
+                    class="arrow"
+                  >
+                    <g id="subway:up-arrow" clip-path="url(#clip0_12070_152)">
+                      <path
+                        class="arrow__fill"
+                        d="M10.634 0.5L1.46875 9.66523L1.46875 15.1652L8.79922 7.83477L8.79922 22.5H12.4688L12.4688 7.83477L19.7992 15.1652L19.7992 9.66523L10.634 0.5Z"
+                        fill="#ffba07"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_12070_152">
+                        <rect
+                          width="22"
+                          height="22"
+                          fill="white"
+                          transform="translate(0 0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <div class="faq__accordion-content">
+                  <p class="faq__accordion-text">
+                    You will have access to over 800 applications and 4000
+                    versions. This diverse selection includes hundreds of
+                    tweaks, emulators, mods, social networking apps, utilities,
+                    and more.
+                  </p>
+                </div>
+              </div>
+              <div class="faq__accordion-box">
+                <button class="faq__accordion">
+                  How long will it take for my account to be activated?
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="23"
+                    viewBox="0 0 22 23"
+                    fill="none"
+                    class="arrow"
+                  >
+                    <g id="subway:up-arrow" clip-path="url(#clip0_12070_152)">
+                      <path
+                        class="arrow__fill"
+                        d="M10.634 0.5L1.46875 9.66523L1.46875 15.1652L8.79922 7.83477L8.79922 22.5H12.4688L12.4688 7.83477L19.7992 15.1652L19.7992 9.66523L10.634 0.5Z"
+                        fill="#ffba07"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_12070_152">
+                        <rect
+                          width="22"
+                          height="22"
+                          fill="white"
+                          transform="translate(0 0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <div class="faq__accordion-content">
+                  <p class="faq__accordion-text">
+                    Upon activating the exclusive sideloading profile included
+                    with your subscription purchase, your account will undergo
+                    standard processing, typically taking between 1 to 72 hours.
+                    To account for this period, we extend your trial by an
+                    additional 3 days. If your account remains in processing for
+                    more than 72 hours, please submit a support ticket for
+                    assistance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <a href="#" class="header__logo"></a>
+        <div class="footer__social">
+          <a
+            href="https://www.facebook.com/iosbuildstore/"
+            class="footer__social-link"
+            target="_blank"
+            ><img
+              src="/public/facebook-icon.svg"
+              alt="fb icon"
+              class="footer__social-icon" /></a
+          ><a
+            href="https://twitter.com/builds_io"
+            class="footer__social-link"
+            target="_blank"
+            ><img
+              src="/public/twitter-icon.svg"
+              alt="twitter icon"
+              class="footer__social-icon" /></a
+          ><a
+            href="https://www.reddit.com/r/builds_io/"
+            class="footer__social-link"
+            target="_blank"
+          >
+            <img
+              src="/public/reddit-icon.svg"
+              alt="reddit icon"
+              class="footer__social-icon"
+          /></a>
+        </div>
+        <p class="footer__copyright">
+          © BuildStore 2023 is a third-party store for installing iOS apps. We
+          have combined all the most popular applications not available for
+          download in the apple store and made them available by subscription.
+        </p>
+      </div>
+    </footer>
+    <script src="/scripts/swiper-bundle.min.js"></script>
+    <script type="module" src="/main.js" defer></script>
+  </body>
+</html>

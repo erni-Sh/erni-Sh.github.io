@@ -1,0 +1,84 @@
+.embla {
+  margin-top: 30px;
+}
+.embla__container {
+  display: flex;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__slide {
+  margin-left: 20px;
+  margin-right: 20px;
+  flex: 0 0 100%;
+  min-width: 0;
+  max-width: 259px;
+  min-height: 564px;
+}
+.embla__img {
+  width: 100%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.embla__buttons {
+  display: flex;
+  width: 104%;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  justify-content: space-between;
+}
+
+.embla__button--prev {
+  background-image: url('/btn-prev.png');
+  background-color: transparent;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.embla__button--next {
+  background-image: url('/btn_next.png');
+  background-color: transparent;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.embla__dots {
+  width: 100%;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+}
+.embla__dot {
+  margin-right: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  cursor: pointer;
+}
+.embla__dot:last-child {
+  margin: 0;
+}
+.embla__dot--selected {
+  width: 16px;
+  border-radius: 4px;
+  background-color: #ffba07;
+}
+
+@media screen and (max-width: 960px) {
+  .embla__slide {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 194px;
+    min-height: 424px;
+  }
+}
